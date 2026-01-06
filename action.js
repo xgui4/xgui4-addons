@@ -21,5 +21,7 @@ if (nav) {
 }
 
 function go_to_link(link) {
-    alert("Not implemented yet");
+    chrome.tabs.create(link);
+    
+    console.log("tabs oppened")
 }   
