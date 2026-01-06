@@ -13,16 +13,32 @@
     "version": "0.0.0.1",
     "action": {
         "default_popup": "ui.html",
-        "default_icon": "icon.png"
+        "default_icon": "icon/icon.png"
     },
     "icons" :{
         "94" : "icon/icon-94.png"
     },
-    "permissions": ["activeTab"],
+    "permissions": ["activeTab", "storage"],
+
     "content_scripts": [
-    {
-      "matches": ["https://xgui4.github.io/*"],
-      "js": ["banner.js"]
-    }
-    ]
+        {
+        "matches": ["https://xgui4.github.io/*"],
+        "js": ["banner.js"],
+        "css": ["banner.css", "close-button.css"]
+        },
+        {
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["banner.js"],
+        "css": ["banner.css", "close-button.css"]
+        },
+        {
+        "matches": ["https://github.com/*"],
+        "js": ["banner.js", "action.js"],
+        "css": ["banner.css", "close-button.css"]
+        }
+    ],
+
+    "options_ui": {
+        "page": "settings/setting.html"
+  }
 }

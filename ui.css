@@ -4,7 +4,7 @@ body {
 }
 
 button {
-  background-image: linear-gradient(to right, #DA22FF, #9733EE, #22d6ff, red, yellow, green);
+  background-image: linear-gradient(to right, #DA22FF, #9733EE, #22d6ff);
   margin: 10px;
   padding: 15px 45px;
   text-align: center;
@@ -12,6 +12,7 @@ button {
   transition: 0.5s;
   background-size: 200% auto;
   border-radius: 10px;
+  color: white; 
 }
 
 button:hover {
@@ -30,3 +31,8 @@ nav {
   display: flex;
   text-decoration: none;
 }
+
+.one-color-emoji {
+  color: transparent;
+  text-shadow: 0 0 0 white;
+}   

@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ui.css">
-    <script src="ui.js"> </script>
+    <script src="ui.js" defer> </script>
     <title>Xgui4 Addon UI</title>
 </head>
 <body>
     <nav>
-        <img src="icon.png" width="100" height="100" alt="Xgui4 Addon Icon"/>
+        <img src="icon/icon.png" width="100" height="100" alt="Xgui4 Addon Icon"/>
         <h1>Xgui4 Addon</h1>
     </nav>
 
@@ -18,12 +18,10 @@
 
     <div class="flex">
         <a href="https://xgui4.github.io/">
-            <button>🌐 My website</button>
+            <button><span class="one-color-emoji">🌐</span> My website</button>
         </a>
 
-        <a href="setting.html">
-            <button>⚙️ Setting </button>
-        </a>
+        <button onclick="browswer.runtime.openOptionPage()">&#9881; Setting </button>
     </div>
     
 </body>
