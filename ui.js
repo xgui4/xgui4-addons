@@ -1,5 +1,5 @@
 function onError(error) {
-  console.log(`Error: ${error}`);
+  console.error(`Error: ${error}`);
 }
 
 function onGot(item) {
@@ -7,8 +7,8 @@ function onGot(item) {
   if (item.theme == "Dark") {
     color = "black";
   }
-  console.timeLog(`Change the theme to ${theme}`)
-  console.info("Not Implemented YET!")
+  console.timeLog(`Changed the theme to ${theme}`)
+  console.warn("Not Implemented YET!")
   // not implemented yet
 }
 

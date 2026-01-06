@@ -23,16 +23,6 @@
     "content_scripts": [
         {
         "matches": ["https://xgui4.github.io/*"],
-        "js": ["banner.js"],
-        "css": ["banner.css", "close-button.css"]
-        },
-        {
-        "matches": ["https://www.youtube.com/*"],
-        "js": ["banner.js"],
-        "css": ["banner.css", "close-button.css"]
-        },
-        {
-        "matches": ["https://github.com/*"],
         "js": ["banner.js", "action.js"],
         "css": ["banner.css", "close-button.css"]
         }
