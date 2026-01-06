@@ -1,0 +1,23 @@
+{
+    "browser_specific_settings": {
+        "gecko": {
+        "id": "@xgui4-addon",
+        "browser_specific_settings.gecko.data_collection_permissions": "none"
+        }
+    },
+    "manifest_version": 3,
+    "name": "Xgui4 Addon",
+    "description": "My first ever Browser Extension",
+    "version": "0.0.0.1",
+    "action": {
+        "default_popup": "ui.html",
+        "default_icon": "icon.png"
+    },
+    "permissions": ["activeTab"],
+    "content_scripts": [
+    {
+      "matches": ["https://xgui4.github.io/*"],
+      "js": ["banner.js"]
+    }
+    ]
+}

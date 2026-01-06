@@ -1,0 +1,32 @@
+body {
+  background-color: black;
+  color: white; 
+}
+
+button {
+  background-image: linear-gradient(to right, #DA22FF, #9733EE, #22d6ff, red, yellow, green);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-position: right center; 
+}
+
+nav {
+  display: flex;
+}
+
+.flex {
+  display: flex;
+}
+
+.nav-link-div {
+  display: flex;
+  text-decoration: none;
+}
